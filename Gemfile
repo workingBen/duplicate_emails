@@ -1,6 +1,9 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.0'
+gem "aws-ses", "~> 0.4.1", :require => 'aws/ses'
+gem 'ruby-debug19'
+gem 'delayed_job'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

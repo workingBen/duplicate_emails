@@ -1,0 +1,7 @@
+<% form_tag '/amazon_ses/send_email' do %>
+  <%= label_tag :email %>
+  <%= text_field_tag :email, "Enter email address here" %><br />
+  <%= label_tag :delay, 'Use Delayed Job' %>
+  <%= check_box_tag :delay %><br />
+  <%= submit_tag "Send Email", :disable_with => "Please Wait..." %>
+<% end %>

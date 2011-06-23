@@ -1,4 +1,7 @@
 DuplicateEmails::Application.routes.draw do
+  get "amazon_ses/index"
+  post "amazon_ses/send_email"
+  root to: "amazon_ses#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
